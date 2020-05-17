@@ -1,0 +1,345 @@
+/*****************body************************************/
+body {
+    margin: auto;
+}
+/*****************header************************************/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial black'; 
+    height: 200px;
+    background-color: #579C87;
+    width: 100%;
+}
+.headerTitre {
+    font-size: 6.5em;
+    font-weight: bold;
+    color: #fcca46;
+}
+header a {
+    color: #fdcb46;
+    text-decoration: none;
+}
+/******************Selection menus***********************/
+.menus {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;  
+}
+.menu {
+    height: 400px;
+    width: 320px;
+    box-shadow: 0px 0px 5px 3px #C0C0C0; /* bordure */
+    margin: 15px 0 15px 0;
+    overflow: hidden;
+}
+.menu img {
+    transition: all 0.75s;
+    -moz-transition: all 0.75s;
+    -webkit-transition: all 0.75s;
+    -o-transition: all 0.75s;
+    width: 320px;
+}
+.menu:hover img {
+    transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    opacity: 50%;
+}
+/*****************Bouton prochainement************************************/
+#bouton_proch {
+    background: #579C87;
+    width: 300px;
+    height: 2em;
+    padding: 20px 0 0 27px;
+    border-radius: 15px;
+    font-size: 29px;
+    margin-bottom: 4em;
+    margin-left: auto;
+    margin-right: auto;
+}
+#bouton_proch a {
+    text-decoration: none;
+    color: #FCCA46;
+    font-family: 'Arial black';
+}
+#bouton_proch p {
+    margin: auto;
+    text-align: center;
+}
+#bouton_proch #pt1 {
+    animation: suspention 2.5s linear infinite;
+}
+@keyframes suspention {
+ 0% {
+ opacity: 1;
+ }
+ 65% {
+ opacity: 1;
+ }
+ 66% {
+ opacity: 0;
+ }
+ 100% {
+ opacity: 0;
+ }
+}
+#bouton_proch #pt2 {
+    animation: suspention2 2.5s linear infinite;
+}
+@keyframes suspention2 {
+ 0% {
+  opacity: 0;
+ }
+ 21% {
+  opacity: 0;
+ }
+ 22% {
+  opacity: 1;
+ }
+ 65% {
+  opacity: 1;
+ }
+ 66% {
+  opacity: 0;
+ }
+ 100% {
+  opacity: 0;
+ }
+}
+#bouton_proch #pt3 {
+    animation: suspention3 2.5s linear infinite;
+}
+@keyframes suspention3 {
+ 0% {
+  opacity: 0;
+ }
+ 43% {
+  opacity: 0;
+ }
+ 44% {
+  opacity: 1;
+ }
+ 65% {
+  opacity: 1;
+ }
+ 66% {
+  opacity: 0;
+ }
+ 100% {
+  opacity: 0;
+ }
+}
+/*****************Footer avec boutons************************************/
+footer {
+    font-family: 'Arial black';
+}
+#footer {
+    height: 100px;
+    width: 100%;
+    background: #579c87;
+    margin-top: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.footer_couleurTexte {
+    height: 100px;
+    color: #fcca46;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+.bouton_mL:hover {
+    animation: wiggle 0.4s ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes wiggle {
+    20% {
+        transform: translateX(2px);
+    }
+    40% {
+        transform: translateX(-2px);
+    }
+    60% {
+        transform: translateX(2px);
+    }
+    80% {
+        transform: translateX(-2px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.bouton_mL a {
+    width: 250px;
+    height: 43px;
+    padding-top: 7px;
+    text-align: center;
+    color: #fcca46;
+    background: #579c87;
+    text-decoration: none; /* retire le surlignage */
+    padding-left: 0;
+}
+.bouton_mL {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* centrage vertical */
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.bouton_contact {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* centrage vertical */
+    margin-right: 15px;
+    margin-top: 5px;
+}
+.bouton_contact a {
+    width: 250px;
+    height: 43px;
+    padding-top: 7px;
+    text-align: center;
+    color: #fcca46;
+    background: #579c87;
+    text-decoration: none; /* retire le surlignage */
+    padding-left: 0;
+}
+.bouton_contact:hover {
+    animation: wiggle 0.4s ease;
+    animation-iteration-count: infinite;
+}
+@keyframes wiggle {
+    20% {
+        transform: translateX(2px);
+    }
+    40% {
+        transform: translateX(-2px);
+    }
+    60% {
+        transform: translateX(2px);
+    }
+    80% {
+        transform: translateX(-2px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+/*****************Mobile 1************************************/
+@media (min-width:500px) and (max-width:1105px) and (orientation: portrait) {
+.header {
+    height: 100px;
+}
+.headerTitre {
+    font-size: 4.5em;
+}
+.menus {
+    width: 100%;
+    justify-content: center;
+}
+.menu {
+    height: 300px;
+    width: 240px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.menu img {
+    width: 240px;
+}
+#bouton_proch {
+    width: 210px;
+    height: 1.5em;
+    font-size: 21px;
+}  
+#footer {
+    height: 80px;
+    margin-top: 30px;
+}
+.footer_couleurTexte {
+    height: 100px;
+    font-size: 1.1em;
+}
+}
+/*****************Mobile 2************************************/
+@media (min-width:362px) and (max-width:499px) and (orientation: portrait) {
+.header {
+    height: 80px;
+}
+.headerTitre {
+    font-size: 4em;
+}
+.menus {
+    width: 100%;
+    flex-direction: column;
+}
+.menu {
+    height: 300px;
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu img {
+    width: 240px;
+}
+#footer {
+    height: 60px;
+}
+.footer_couleurTexte {
+    height: 60px;
+    font-size: 1em;
+}
+#bouton_proch {
+    width: 210px;
+    height: 25px;
+    font-size: 21px;
+    padding-bottom: 15px;
+}  
+}
+/*****************Mobile 3************************************/
+@media (max-width:361px) and (orientation: portrait) {
+.header {
+    height: 70px;
+}
+.headerTitre {
+    font-size: 3.3em;
+}
+.menus {
+    width: 100%;
+    flex-direction: column;
+}
+.menu {
+    height: 300px;
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu img {
+    width: 240px;
+}
+#footer {
+    height: 50px;
+}
+.footer_couleurTexte {
+    height: 60px;
+    font-size: 0.9em;
+}
+#bouton_proch {
+    width: 190px;
+    height: 25px;
+    font-size: 18px;
+    padding-bottom: 15px;
+}  
+.bouton_contact a {
+    width: 180px;
+}
+}
