@@ -1,22 +1,22 @@
 @font-face {
     font-family:"FontMenu1";
-    src: url(../Font/DevonshireRegular.ttf);
+    src: url(../font/DevonshireRegular.ttf);
 }
 @font-face {
     font-family:"FontMenu2";
-    src:url(../Font/CroissantOne.ttf)
+    src:url(../font/CroissantOne.ttf)
 }
 @font-face {
     font-family:"FontMenu3";
-    src:url(../Font/DancingScript.otf)
+    src:url(../font/DancingScript.otf)
 }
 @font-face {
     font-family:"FontMenu4";
-    src:url(../Font/Caveat.ttf)
+    src:url(../font/Caveat.ttf)
 }
 @font-face {
     font-family:"FontMenu5";
-    src:url(../Font/KaushanScript.ttf)
+    src:url(../font/KaushanScript.ttf)
 }
 /***************************HEADER******************************/
 .header {
